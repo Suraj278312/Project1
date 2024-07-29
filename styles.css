@@ -42,7 +42,7 @@ nav ul li a:hover {
 
 /*hero*/
 
-.hero-content {
+.hero {
    background-image:url(hero1.jpg);
     background-position: center;
     background-repeat: no-repeat;
