@@ -43,7 +43,7 @@ nav ul li a:hover {
 /*hero*/
 
 .hero {
-   background-image:url(bg5.jpg);
+   background-image:url(hero1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,23 @@ nav ul li a:hover {
   text-align: left;
   color: #fff;
 }
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+  margin-top :50px;
+  margin-left: 4%;
+  
+}
 
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
 
 .btn {
   display: inline-block;
