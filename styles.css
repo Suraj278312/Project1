@@ -47,7 +47,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 4%;
+   
 }
 
 
@@ -59,7 +59,7 @@ nav ul li a:hover {
   padding: 20px;
   margin-top :50px;
   margin-left: 4%;
-  
+   margin-bottom: 3%;
 }
 
 .hero-content h1 {
