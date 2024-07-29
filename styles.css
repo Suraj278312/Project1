@@ -43,11 +43,11 @@ nav ul li a:hover {
 /*hero*/
 
 .hero {
-  background-image: url("hero1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
+   background-image:url(bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
   text-align: left;
