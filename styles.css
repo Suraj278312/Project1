@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffcc00;
+    background-color: black; /* Change the background color to black */
 }
 
 .logo img {
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white; /* Change the text color to white */
     font-weight: bold;
 }
 
@@ -304,4 +304,5 @@ nav ul li a {
     .footer-links {
         margin-top: 20px;
     }
-}
+    }
+    
