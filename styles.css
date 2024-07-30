@@ -1,42 +1,46 @@
-/* General Styles */
-body, html {
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: black; /* Change the background color to black */
+    padding: 10px 20px;
+    background-color: black; /* Navbar background color */
+    color: white; /* Navbar text color */
 }
 
-.logo img {
-    max-width: 100px;
+header .logo img {
+    max-width: 150px;
 }
 
-nav ul {
-    display: flex;
+header nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
-nav ul li {
+header nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
+    color: white; /* Navbar link color */
     text-decoration: none;
-    color: white; /* Change the text color to white */
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('subway-hero.jpg');
+    background-image: url('subway-hero.jpg'); /* Ensure the image path is correct */
     background-size: cover;
     background-position: center;
     color: white;
@@ -66,39 +70,36 @@ nav ul li a {
     padding: 50px 20px;
 }
 
-.about h2 {
-    font-size: 32px;
+.about.dark-theme {
+    background-color: #333;
+    color: white;
 }
 
-.about p {
-    font-size: 18px;
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 /* Menu Section */
 .menu {
     padding: 50px 20px;
-}
-
-.menu h2 {
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    width: 30%;
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -107,85 +108,48 @@ nav ul li a {
     height: auto;
 }
 
-.menu-item h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.menu-item p {
-    font-size: 16px;
-}
-
 /* Reservations Section */
 .reservations {
     padding: 50px 20px;
-    background-color: #f7f7f7;
-}
-
-.reservation-form h2 {
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.reservation-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.reservation-form input,
+.reservation-form input, 
 .reservation-form textarea,
 .reservation-form button {
-    width: 80%;
-    max-width: 500px;
-    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
     padding: 10px;
-    font-size: 16px;
 }
 
 /* Testimonials Section */
 .testimonials {
     padding: 50px 20px;
-    background-color: #ffcc00;
-}
-
-.testimonials h2 {
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .testimonial {
+    max-width: 600px;
+    margin: 20px auto;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .testimonial img {
-    width: 80px;
-    height: 80px;
     border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.testimonial p {
-    font-size: 16px;
-}
-
-.testimonial h4 {
-    font-size: 18px;
-    font-weight: bold;
+    max-width: 100px;
+    height: auto;
 }
 
 /* Gallery Section */
 .gallery {
     padding: 50px 20px;
-}
-
-.gallery h2 {
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .image-grid {
@@ -195,8 +159,8 @@ nav ul li a {
 }
 
 .image-item {
-    width: 45%;
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 20px;
 }
 
 .image-item img {
@@ -207,53 +171,61 @@ nav ul li a {
 /* Contact Section */
 .contact {
     padding: 50px 20px;
-    background-color: #f7f7f7;
+    text-align: center;
 }
 
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .contact-info {
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .info-item {
-    margin-bottom: 20px;
+    max-width: 300px;
+    text-align: center;
 }
 
 .info-item i {
     font-size: 24px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
+    display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 10px 0;
     padding: 10px;
-    font-size: 16px;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
+    padding: 20px 0;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
 .footer-logo img {
     max-width: 100px;
+}
+
+.footer-links {
+    margin: 20px 0;
 }
 
 .footer-links a {
@@ -264,18 +236,26 @@ nav ul li a {
 
 .footer-social a {
     color: white;
-    font-size: 24px;
     margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-text {
+    margin-top: 20px;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
+    header nav ul li {
         margin: 10px 0;
     }
 
@@ -284,25 +264,8 @@ nav ul li a {
         align-items: center;
     }
 
-    .menu-item {
-        width: 100%;
-    }
-
-    .image-grid {
+    .contact-info {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .image-item {
-        width: 100%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-links {
-        margin-top: 20px;
     }
     }
     
