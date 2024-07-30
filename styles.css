@@ -44,8 +44,13 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .hero-content h1 {
@@ -68,6 +73,7 @@ header nav ul li a {
 /* About Section */
 .about {
     padding: 50px 20px;
+    text-align: right;
 }
 
 .about.dark-theme {
@@ -76,8 +82,8 @@ header nav ul li a {
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .about-image img {
@@ -88,7 +94,7 @@ header nav ul li a {
 /* Menu Section */
 .menu {
     padding: 50px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .menu-items {
@@ -111,12 +117,12 @@ header nav ul li a {
 /* Reservations Section */
 .reservations {
     padding: 50px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .reservation-form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .reservation-form input, 
@@ -131,11 +137,11 @@ header nav ul li a {
 /* Testimonials Section */
 .testimonials {
     padding: 50px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .testimonial {
-    max-width: 600px;
+    max-width: 50%;
     margin: 20px auto;
     text-align: center;
 }
@@ -149,7 +155,7 @@ header nav ul li a {
 /* Gallery Section */
 .gallery {
     padding: 50px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .image-grid {
@@ -171,12 +177,12 @@ header nav ul li a {
 /* Contact Section */
 .contact {
     padding: 50px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .contact-info {
