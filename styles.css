@@ -20,7 +20,7 @@ header {
 }
 
 header .logo img {
-    max-width: 150px;
+    max-width: 50px;
 }
 
 header nav ul {
@@ -33,7 +33,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white; /* Navbar link color */
+    color: black; /* Navbar link color */
     text-decoration: none;
     font-weight: bold;
 }
