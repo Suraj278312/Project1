@@ -38,6 +38,20 @@ header nav ul li a {
     font-weight: bold;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: white;
+    display: block;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+}
+
 /* Hero Section */
 .hero {
     background-image: url('hero1.jpg'); /* Ensure the image path is correct */
@@ -253,10 +267,19 @@ header nav ul li a {
     header nav ul {
         flex-direction: column;
         align-items: center;
+        display: none; /* Hide nav items by default */
+    }
+
+    header nav ul.show {
+        display: flex; /* Show nav items when .show is added */
     }
 
     header nav ul li {
         margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu on small screens */
     }
 
     .menu-items {
@@ -267,5 +290,4 @@ header nav ul li a {
     .contact-info {
         flex-direction: column;
     }
-    }
-    
+}
