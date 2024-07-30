@@ -40,7 +40,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('subway-hero.jpg'); /* Ensure the image path is correct */
+    background-image: url('hero1.jpg'); /* Ensure the image path is correct */
     background-size: cover;
     background-position: center;
     color: white;
